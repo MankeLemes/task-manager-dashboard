@@ -87,6 +87,10 @@ This project was developed to improve skills in:
 
 ---
 
+## 🌐 Live Demo
+
+https://mankelemes.github.io/task-manager-dashboard/
+
 ## 👨‍💻 Author
 
 Developed by **Mateus Manke Lemes**
