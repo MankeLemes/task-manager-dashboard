@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Task Manager Dashboard </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="assets/images/logo.png">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navegation">
+
+                <div class="logo-container">
+                    <img src="assets/images/logo.png" class="logo">
+                </div>
+
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#tasks">Tasks</a>
+                    <a href="#statistics">Statistics</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+            </nav>
+        </header>
+        <section class="home" id="home">
+
+            <h1 class="title-home">
+                Organize Your Tasks and Boost Productivity
+            </h1>
+
+            <p class="text-home">
+                Manage your daily activities, track progress, set priorities,
+                and achieve your goals with a simple and intuitive dashboard.
+            </p>
+
+            <div class="home-buttons">
+                <button class="button-home">Get Started</button>
+                <button class="button-secondary">Learn More</button>
+            </div>
+
+            <div class="home-features">
+
+                <div class="feature">
+                    <h3>📋 Task Management</h3>
+                    <p>Create, edit and organize tasks easily.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>📊 Progress Tracking</h3>
+                    <p>Monitor completed and pending activities.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>🎯 Productivity Focus</h3>
+                    <p>Stay focused on what matters most.</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="cards" id="tasks">
+            <div class="card">
+                <h3>Total Tasks</h3>
+                <p>5</p>
+            </div>
+            <div class="card">
+                <h3>Completed</h3>
+                <p>2</p>
+            </div>
+            <div class="card">
+                <h3>Pending</h3>
+                <p>3</p>
+            </div>
+        </section>
+       <section class="progress-section">
+
+            <h2>Task Progress</h2>
+
+            <p>Completed: 2 of 5 Tasks</p>
+
+            <div class="progress-bar">
+                <div class="progress-fill">40%</div>
+            </div>
+
+            <small>3 tasks remaining</small>
+
+        </section>
+        <section class="table-section" id="statistics">
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th>Task</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Deadline</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <td> Learn HTML </td>
+                        <td> High </td>
+                        <td> In Progress </td>
+                        <td> 20/06 </td>
+                    </tr>
+                    <tr>
+                        <td> Finish my project HTML/CSS </td>
+                        <td> Low </td>
+                        <td> In Progress </td>
+                        <td> 05/07 </td>
+                    </tr>
+                    <tr>
+                        <td> Study for the Math Test </td>
+                        <td> Urgent </td>
+                        <td> In Progress </td>
+                        <td> 22/06 </td>
+                    </tr>
+                    <tr>
+                        <td> Post my first project on my GitHub </td>
+                        <td> Medium </td>
+                        <td> Completed </td>
+                        <td> 23/04 </td>
+                    </tr>
+                    <tr>
+                        <td> Make my first post on LinkedIn </td>
+                        <td> Low </td>
+                        <td> Completed </td>
+                        <td> 01/06 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="form-section" id="new-task">
+            <h2>Create New Task</h2>
+
+            <form class="task-form">
+
+                <label for="task-name">Task Name</label>
+                <input type="text" id="task-name" placeholder="Ex: Learn JavaScript" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" rows="4" placeholder=""></textarea>
+
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                    <option>Urgent</option>
+                </select>
+
+                <label for="category">Category</label>
+                <select id="category">
+                    <option>Studies</option>
+                    <option>Work</option>
+                    <option>Personal</option>
+                    <option>Projects</option>
+                </select>
+
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline">
+
+                <label for="status">Status</label>
+                <select id="status">
+                    <option>Not Started</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                </select>
+
+                <label for="responsible">Assigned To</label>
+                <input type="text" id="responsible" placeholder="Your name">
+
+                <button type="submit">Create Task</button>
+
+            </form>
+        </section>
+        <section class="about" id="about">
+            <h2>About Task Manager</h2>
+            <p>
+                Task Manager is a platform designed to help users organize 
+                and track their daily activities efficiently.
+                With an intuitive interface, users can monitor progress, 
+                manage priorities, and improve productivity through 
+                real-time statistics and task tracking.
+            </p>
+
+            <p>
+                Our goal is to transform personal organization into an intuitive process,
+                allowing you to stay focused on your priorities and achieve your goals more efficiently.
+            </p>
+        </section>
+        <section class="contact-section" id="contact">
+            <h2>Contact Us</h2>
+
+            <form class="contact-form">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@email.com">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <div class="footer-section">
+                    <h3>Task Manager</h3>
+                    <p>Organize your tasks and increase your productivity in a simple and efficient way.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#tasks">Tasks</a>
+                    <a href="#statistics">Statistics</a>
+                    <a href="#about">About</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📧 mateusmank30@gmail.com</p>
+                    <p>📱 (48) 99187-9220</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <a href="https://www.linkedin.com/in/mateus-manke-lemes/">LinkedIn</a>
+                    <a href="https://github.com/MankeLemes">GitHub</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Task Manager | Developed by Mateus Manke Lemes</p>
+            </div>
+
+        </footer>
+    </body>
+</html>
